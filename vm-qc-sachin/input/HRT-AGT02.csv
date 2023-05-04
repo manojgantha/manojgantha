@@ -1,0 +1,28 @@
+Parameter,ExpectedValue
+VMName,HRT-AGT02
+CPU,2
+MemoryinGB,4
+AzureVMType,Standard_F2s_v2 
+ManagedDisk,TRUE
+OSDiskInGB,128
+DataDiskInGB,NA
+TempDisk,NA
+Operating System,Windows (Windows Server 2012 R2 Standard)
+Tag - Product | product-name,directcloud
+Tag - business-unit,tte
+Tag - team,css
+Tag - billing,prod
+Tag - environment,NA
+Tag - Primary-contact-email,keith_weitz@trimble.com
+Tag - Primary-contact-name,Keith Weitz
+Tag - customer | customer-name,12345678
+Tag - automation-opt-in,no
+RGLock,TRUE
+IPAddress,172.22.151.72
+GuestLevelMonitoring,TRUE
+Storage account,hrtstorageaccount
+BackupVault,hrtrecoveryvault
+vNet,Vnet-Eastus2-HRT
+SubnetName,Subnet-Eastus2-HRT
+HybridBenefit,FALSE
+ResourceGroup,HRT_Heritage_Transport

@@ -1,0 +1,8 @@
+"Parameter","ExpectedValue","ActualValue","Result","PerformedAt"
+"Resource Group","HRT_Heritage_Transport","HRT_Heritage_Transport","Pass","1/10/2023 10:35:52 AM"
+"Vnet Name","Vnet-Eastus2-HRT","Vnet-Eastus2-HRT","Pass","1/10/2023 10:35:52 AM"
+"Vnet Address","172.22.151.64/27","172.22.151.64/27","Pass","1/10/2023 10:35:52 AM"
+"Subnet Address","172.22.151.64/27","172.22.151.64/27","Pass","1/10/2023 10:35:52 AM"
+"Peering1","Peer-HRT-To-Core","Peer-HRT-To-Core","Pass","1/10/2023 10:35:52 AM"
+"Peering2","NA",,"Fail","1/10/2023 10:35:52 AM"
+"NSG FrontEnd ","NA",,"Fail","1/10/2023 10:35:52 AM"

@@ -1,0 +1,64 @@
+20230406_163353[LOG]-[START]-Processing CsvFile '.\HRT_Heritage_Transport_AGT_Input.csv'
+20230406_163353[LOG]-Loading Csv file 'C:\Users\magantha\Desktop\migration-scripts\HRT_Heritage_Transport_AGT_Input.csv'
+20230406_163353[LOG]-Directory already exist: 'C:\Users\magantha\Desktop\migration-scripts\Trimble_AzMigrate_Logs'
+20230406_163353[LOG]-Csv output report file: 'C:\Users\magantha\Desktop\migration-scripts\Trimble_AzMigrate_Logs\Trimble_AzMigrate_out.Trimble_AzMigrate_StartReplication.ps1.20230406_163353.csv'
+20230406_163353[LOG]-Checking if current subscription equals to 'd9995d5e-baa7-4e6b-81d5-2ee203b363ea'
+20230406_163353[LOG]-Subscription 'd9995d5e-baa7-4e6b-81d5-2ee203b363ea' is already selected
+20230406_163353[LOG]----BEGIN ITEM DATA---
+20230406_163353[LOG]-AVAILABILITYSET_NAME=
+20230406_163353[LOG]-AVAILABILITYZONE_NUMBER=
+20230406_163353[LOG]-AZMIGRATEASSESSMENT_NAME=HRT_Heritage_Transport_Assessment
+20230406_163353[LOG]-AZMIGRATEGROUP_NAME=HRT_Heritage_Transport_Group
+20230406_163353[LOG]-AZMIGRATEPROJECT_NAME=DB2Assessment
+20230406_163354[LOG]-AZMIGRATEPROJECT_RESOURCE_GROUP_NAME=truckmate
+20230406_163354[LOG]-AZMIGRATEPROJECT_SUBSCRIPTION_ID=d9995d5e-baa7-4e6b-81d5-2ee203b363ea
+20230406_163354[LOG]-LICENSE_TYPE=
+20230406_163354[LOG]-OK_TO_CLEANUP=Y
+20230406_163354[LOG]-OK_TO_MIGRATE=Y
+20230406_163354[LOG]-OK_TO_RETRIEVE_REPLICATIONSTATUS=Y
+20230406_163354[LOG]-OK_TO_TESTMIGRATE=Y
+20230406_163354[LOG]-OK_TO_TESTMIGRATE_CLEANUP=Y
+20230406_163354[LOG]-OK_TO_UPDATE=Y
+20230406_163354[LOG]-OK_TO_USE_ASSESSMENT=Y
+20230406_163354[LOG]-OS_DISK_ID=
+20230406_163354[LOG]-SOURCE_MACHINE_NAME=HRT-AGT01
+20230406_163354[LOG]-TARGET_DISKTYPE=StandardHDD_LRS
+20230406_163354[LOG]-TARGET_MACHINE_NAME=HRT-AGT01
+20230406_163354[LOG]-TARGET_MACHINE_SIZE=Standard_F2s_v2
+20230406_163354[LOG]-TARGET_RESOURCE_GROUP_NAME=HRT_Heritage_Transport
+20230406_163354[LOG]-TARGET_SUBNET_NAME=Subnet-Eastus2-HRT
+20230406_163354[LOG]-TARGET_SUBSCRIPTION_ID=d9995d5e-baa7-4e6b-81d5-2ee203b363ea
+20230406_163354[LOG]-TARGET_VNET_NAME=Vnet-Eastus2-HRT
+20230406_163354[LOG]-TESTMIGRATE_VNET_NAME=Vnet-Eastus2-HRT
+20230406_163354[LOG]-TURNOFF_SOURCESERVER=Y
+20230406_163354[LOG]-UPDATED_AVAILABILITYSET_NAME=
+20230406_163354[LOG]-UPDATED_AVAILABILITYZONE_NUMBER=
+20230406_163354[LOG]-UPDATED_NIC1_ID=
+20230406_163354[LOG]-UPDATED_NIC2_ID=
+20230406_163354[LOG]-UPDATED_TARGET_MACHINE_NAME=HRT-AGT01
+20230406_163354[LOG]-UPDATED_TARGET_MACHINE_SIZE=
+20230406_163354[LOG]-UPDATED_TARGET_NIC1_IP=
+20230406_163354[LOG]-UPDATED_TARGET_NIC1_SELECTIONTYPE=
+20230406_163354[LOG]-UPDATED_TARGET_NIC1_SUBNET_NAME=
+20230406_163354[LOG]-UPDATED_TARGET_NIC2_IP=
+20230406_163354[LOG]-UPDATED_TARGET_NIC2_SELECTIONTYPE=
+20230406_163354[LOG]-UPDATED_TARGET_NIC2_SUBNET_NAME=
+20230406_163354[LOG]-UPDATED_TARGET_RESOURCE_GROUP_NAME=HRT_Heritage_Transport
+20230406_163354[LOG]-UPDATED_TARGET_VNET_NAME=Vnet-Eastus2-HRT
+20230406_163354[LOG]----END ITEM DATA---
+20230406_163444[LOG]-Getting access token for tenant: '65911ec9-c247-4e7f-b3e5-239b468be687'
+20230406_163444[LOG]-Trying to get an assessment solution with requesturi as 'https://management.azure.com/subscriptions/d9995d5e-baa7-4e6b-81d5-2ee203b363ea/resourceGroups/TruckMate/providers/Microsoft.Migrate/MigrateProjects/DB2Assessment/solutions/Servers-Assessment-ServerAssessment?api-version=2018-09-01-preview'
+20230406_163446[LOG]-Assessment ProjecID: '/subscriptions/d9995d5e-baa7-4e6b-81d5-2ee203b363ea/resourceGroups/TruckMate/providers/Microsoft.Migrate/assessmentprojects/DB2Assessment8279project'
+20230406_163446[LOG]-Trying to get assessment details for machine with requesturi as 'https://management.azure.com/subscriptions/d9995d5e-baa7-4e6b-81d5-2ee203b363ea/resourceGroups/TruckMate/providers/Microsoft.Migrate/assessmentprojects/DB2Assessment8279project/groups/HRT_Heritage_Transport_Group/assessments/HRT_Heritage_Transport_Assessment/assessedmachines?api-version=2019-10-01'
+20230406_163448[LOG]-Retrieving the TargetMachineSize from Assessment
+20230406_163448[LOG]-LICENSE_TYPE is configued as NoLicenseType or not mentioned and hence defaulting to NoLicenseType for: 'HRT-AGT01'
+20230406_163448[LOG]-AVAILABILITYZONE_NUMBER is not mentioned for: 'HRT-AGT01'
+20230406_163448[LOG]-AVAILABILITYSET_NAME is not mentioned for: 'HRT-AGT01'
+20230406_163448[LOG]-OS_DISK_ID is not mentioned for: 'HRT-AGT01'
+20230406_163448[LOG]-The Current Disk in the discovered server data doesn't seem to be an OS Disk for now, we will continue to search for other disk to see if they are OS Disk in the discovered server data: 'HRT-AGT01-6000C291-de8d-7837-60c8-8901ab2c4c34'
+20230406_163448[LOG]-We will now search for scsi0:0 disk and if we find it, we will set that as an OSDisk as we didn't find any OS Disk yet for: 'HRT-AGT01'
+20230406_163448[LOG]-We found scsi0:0 disk, so we will set this as an OSDisk for: 'HRT-AGT01-6000C291-de8d-7837-60c8-8901ab2c4c34'
+20230406_163448[LOG]-Starting replication Job for source 'HRT-AGT01'
+20230406_163513[LOG]-Replication Job is initiated for the specified machine: 'HRT-AGT01'
+20230406_163513[LOG]-Creating Csv reporting output 'C:\Users\magantha\Desktop\migration-scripts\Trimble_AzMigrate_Logs\Trimble_AzMigrate_out.Trimble_AzMigrate_StartReplication.ps1.20230406_163353.csv'
+20230406_163513[LOG]-[FINISH]-CsvFile: '.\HRT_Heritage_Transport_AGT_Input.csv'

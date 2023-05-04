@@ -1,0 +1,8 @@
+Parameter,ExpectedValue
+Resource Group,HRT_Heritage_Transport
+Vnet Name,Vnet-Eastus2-HRT
+Vnet Address,172.22.151.64/27
+Subnet Address,172.22.151.64/27
+Peering1,Peer-HRT-To-Core
+Peering2,NA
+NSG FrontEnd ,NA
