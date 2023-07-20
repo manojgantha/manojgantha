@@ -1,0 +1,31 @@
+pipeline {
+  agent any
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '5'))
+  }
+  environment {
+    DOCKERHUB_CREDENTIALS = credentials('dockerhub')
+  }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'docker build -t magantha/jenkins-docker-hub .'
+      }
+    }
+    stage('Login') {
+      steps {
+        sh 'echo $github_CREDENTIALS_PSW | docker login -u $github_CREDENTIALS_USR --password-stdin'
+      }
+    }
+    stage('Push') {
+      steps {
+        sh 'docker push magantha/jenkins-docker-hub'
+      }
+    }
+  }
+  post {
+    always {
+      sh 'docker logout'
+    }
+  }
+}
